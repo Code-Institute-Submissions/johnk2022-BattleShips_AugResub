@@ -23,9 +23,9 @@ Anyone who likes simple games with a nostalgic retro touch
 
 ## Technology
 
-This project was written using Python.
+This project was written on githun using Python.
 
-[here](https://github.com/johnk2022/battleships)
+Code can be found [here](https://github.com/johnk2022/battleships)
 
 
 
@@ -54,6 +54,7 @@ CodeInstitute and my fellow students for the assistance, encouragement and gener
 Initial Commit.
 Create code for 8*8 Game, 10 turns.
 Deployed to Heroku
+Add Player1 name
 
 ## Bugs
 No validation on player1 variable
