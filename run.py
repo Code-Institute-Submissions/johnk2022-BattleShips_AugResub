@@ -1,3 +1,4 @@
+# Setup random function
 from random import randint
 
 # Setup computer board 8*8 for now
