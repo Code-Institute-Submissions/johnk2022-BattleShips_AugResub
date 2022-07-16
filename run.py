@@ -70,8 +70,8 @@ if __name__ == "__main__":
     print ("Lets Play Battleships, you have 10 missiles.")
 #    missiles = input("How many missiles in this game ? ")
     create_ships(HIDDEN_BOARD)
-    missiles = 10
-    while missiles > 0:
+    turns = 10
+    while turns > 0:
         print('Guess a row and column to fire your missile.')
         print_board(GUESS_BOARD)
         row, column = get_ship_location()
@@ -80,14 +80,14 @@ if __name__ == "__main__":
         elif HIDDEN_BOARD[row][column] == "X":
             print(player1 + " HITS!!!")
             GUESS_BOARD[row][column] = "X" 
-            missiles -= 1  
+            turns -= 1  
         else:
             print(player1 + " MISSES!")
             GUESS_BOARD[row][column] = "-"   
-            missiles -= 1     
+            turns -= 1     
         if count_hit_ships(GUESS_BOARD) == 5:
             print("Congratulations " + player1 + ", You Win!!!")
             break
         print(player1 + ", you have " + str(turns) + " missiles left")
-        if missiles == 0:
-            print("Sorry " + player1 + ", you ran out of missiles")
+        if turns == 0:
+            print("Sorry " + player1 + ", you ran out of missiles.")
