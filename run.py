@@ -1,6 +1,8 @@
+# All credit to YouTuber Knowledge Mavens for most of the code.
+
 # Legend for the maps:
 # X shows a hit.
-# - showa a miss.
+# - shows a miss.
 # " " (space) not guessed yet.
 
 # Setup random function
@@ -52,7 +54,7 @@ def get_ship_location():
         column = input("Ship column: ").upper()
     return int(row) - 1, letters_to_numbers[column]
 
-#check if all ships are hit
+# Check if all ships are hit
 def count_hit_ships(board):
     count = 0
     for row in board:
@@ -65,11 +67,11 @@ def count_hit_ships(board):
 if __name__ == "__main__":
     player1 = input("Enter Your Name : ").upper()
     print ("Hello " + player1 + " !")
-    print ("Lets Play Battleships")
-#    turns = input("How many turns in this game ? ")
+    print ("Lets Play Battleships, you have 10 missiles.")
+#    missiles = input("How many missiles in this game ? ")
     create_ships(HIDDEN_BOARD)
-    turns = 10
-    while turns > 0:
+    missiles = 10
+    while missiles > 0:
         print('Guess a row and column to fire your missile.')
         print_board(GUESS_BOARD)
         row, column = get_ship_location()
@@ -78,14 +80,14 @@ if __name__ == "__main__":
         elif HIDDEN_BOARD[row][column] == "X":
             print(player1 + " HITS!!!")
             GUESS_BOARD[row][column] = "X" 
-            turns -= 1  
+            missiles -= 1  
         else:
             print(player1 + " MISSES!")
             GUESS_BOARD[row][column] = "-"   
-            turns -= 1     
+            missiles -= 1     
         if count_hit_ships(GUESS_BOARD) == 5:
-            print(player1 + " Congratulations, You win!!!")
+            print("Congratulations " + player1 + ", You Win!!!")
             break
-        print(player1 + " you have " + str(turns) + " turns left")
-        if turns == 0:
-            print(player1 + " Sorry, you ran out of turns")
+        print(player1 + ", you have " + str(turns) + " missiles left")
+        if missiles == 0:
+            print("Sorry " + player1 + ", you ran out of missiles")
