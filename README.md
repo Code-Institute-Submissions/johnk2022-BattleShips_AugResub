@@ -1,31 +1,72 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome johnk2022,
+Welcome to my very Python Project!
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+This project is part of the learning material for Code Institute's Fullstack Web Developer program.
 
-## Reminders
+A lot of experimentation, trial, and at times, mostly error.  
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+You can check out the website [here](https://johnk2022.github.io/battleships/)
 
-## Creating the Heroku app
+## Project Description
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+This project was created in order to get familiar with common development tools like Git & GitHub, and how to use them to write and manage python code. 
 
-1. `heroku/python`
-2. `heroku/nodejs`
+### Subject
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+The classic Battle Ships game.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+### Audience
 
-Connect your GitHub repository and deploy as normal.
+Anyone who likes simple games with a nostalgic retro touch
 
-## Constraints
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+## Technology
 
------
+This project was written using Python.
+
+[here](https://github.com/johnk2022/battleships)
+
+
+
+## Code Verified
+validator.w3.org - July 2022
+
+
+jigsaw.w3.org/css-validator - July 2022
+
+## Project Wireframe
+![JinWireframe.png](JinWireframe.png)
+
+
+
+## Credits
+
+GitHub for the development tools and website hosting.
+
+Python code taken from taken from YouTuber Knowledge Mavens
+
+CodeInstitute and my fellow students for the assistance, encouragement and general moral boosters.
+
+## Version History
+
+16/07/22 
+Initial Commit
+Update README.md
+
+## Bugs
+
+
+
+## Future Development
+
+
+
+## FAQ 
+N/A
+---
+
 Happy coding!
+
+johnk2022
+July 2022
