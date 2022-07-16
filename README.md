@@ -49,13 +49,6 @@ This project was written on github using Python.
 Code can be found [here](https://github.com/johnk2022/battleships)
 
 
-## Code Verified
-
-validator.w3.org - July 2022
-
-jigsaw.w3.org/css-validator - July 2022
-
-
 ## Project Wireframe
 ![BSWireframe.png](BSWireframe.png)
 
