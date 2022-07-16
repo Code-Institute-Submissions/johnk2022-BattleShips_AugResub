@@ -28,8 +28,14 @@ def print_board(board):
 # Player Guess 
 def get_ship_location():
     row = input("Enter the row of the ship: ").upper()
-    column = input("Enter the column of the ship: ").upper()
-    return int(row) - 1, letters_to_numbers[column]
+    while row not in "12345678":
+        print('Not an appropriate choice, please select a valid row')
+        row = input("Enter the row of the ship: ").upper()
+        column = input("Enter the column of the ship: ").upper()
+    while column not in "12345678":
+        print('Not an appropriate choice, please select a valid column')
+        column = input("Enter the column of the ship: ").upper()
+    return int(row) - 1, int(column) - 1
 
 
 # Check if hit / win
