@@ -56,7 +56,7 @@ Create code for 8*8 Game, 10 turns.
 Deployed to Heroku
 
 ## Bugs
-
+No validation on player1 variable
 
 
 ## Future Development
