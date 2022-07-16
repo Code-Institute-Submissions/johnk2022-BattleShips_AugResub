@@ -1,9 +1,9 @@
 from random import randint
 
 # Setup computer board 8*8 for now
-COMPUTER_BOARD = [[" "] * 8 for x in range(8)]
+HIDDEN_BOARD = [[" "] * 8 for x in range(8)]
 # Setup hits and misses
-HITMISS_BOARD = [[" "] * 8 for i in range(8)]
+GUESS_BOARD = [[" "] * 8 for i in range(8)]
 
 # Create computer ships x 5
 def create_ships(board):
@@ -35,20 +35,48 @@ letters_to_numbers = {
     'H': 7
 }
 
-
-
 # Player Guess 
 def get_ship_location():
-    row = input("Enter the row of the ship: ").upper()
+    row = input("Ship Row: ").upper()
     while row not in "12345678":
-        print('Not an appropriate choice, please select a valid row')
-        row = input("Enter the row of the ship: ").upper()
-    column = input("Enter the column of the ship: ").upper()
+        print('Please select a valid row 1 to 8')
+        row = input("Ship Row: ").upper()
+    column = input("Ship column: ").upper()
     while column not in "ABCDEFGH":
-        print('Not an appropriate choice, please select a valid column')
-        column = input("Enter the column of the ship: ").upper()
+        print('Please select a valid column A to H')
+        column = input("Ship column: ").upper()
     return int(row) - 1, letters_to_numbers[column]
 
+#check if all ships are hit
+def count_hit_ships(board):
+    count = 0
+    for row in board:
+        for column in row:
+            if column == "X":
+                count += 1
+    return count
 
-# Check if hit / win
-# def count_hits():
+# Main Game
+if __name__ == "__main__":
+    create_ships(HIDDEN_BOARD)
+    turns = 10
+    while turns > 0:
+        print('Guess a battleship location')
+        print_board(GUESS_BOARD)
+        row, column = get_ship_location()
+        if GUESS_BOARD[row][column] == "-":
+            print("You guessed that one already.")
+        elif HIDDEN_BOARD[row][column] == "X":
+            print("Hit")
+            GUESS_BOARD[row][column] = "X" 
+            turns -= 1  
+        else:
+            print("MISS!")
+            GUESS_BOARD[row][column] = "-"   
+            turns -= 1     
+        if count_hit_ships(GUESS_BOARD) == 5:
+            print("You win!")
+            break
+        print("You have " + str(turns) + " turns left")
+        if turns == 0:
+            print("You ran out of turns")
