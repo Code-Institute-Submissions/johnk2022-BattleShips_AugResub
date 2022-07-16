@@ -6,7 +6,7 @@ This project is part of the learning material for Code Institute's Fullstack Web
 
 A lot of experimentation, trial, and at times, mostly error.  
 
-You can check out the website [here](https://johnk2022.github.io/battleships/)
+You can check it out on Heroku [here](https://battleshipsjk2.herokuapp.com/)
 
 ## Project Description
 
@@ -51,8 +51,9 @@ CodeInstitute and my fellow students for the assistance, encouragement and gener
 ## Version History
 
 16/07/22 
-Initial Commit
-Update README.md
+Initial Commit.
+Create code for 8*8 Game, 10 turns.
+Deployed to Heroku
 
 ## Bugs
 
