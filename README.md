@@ -13,6 +13,14 @@ You can check it out on Heroku [here](https://battleshipsjk2.herokuapp.com/)
 
 This project was created in order to get familiar with common development tools like Git & GitHub, and how to use them to write and manage python code. 
 
+The Battleships game is played on grids on which each player's fleet of battleships are marked. 
+
+The locations of the fleets are concealed from the other player. 
+
+Players call shots at the other player's ships, and the objective of the game is to destroy the opposing player's fleet.
+
+The application provides a working battleships game for a single user to play against the computer.
+
 Current game set to 8*8 board, 1 cell ship size and 10 turns.
 
 To play, try to guess the rows & colums (grid reference) that contain enemy ships.
