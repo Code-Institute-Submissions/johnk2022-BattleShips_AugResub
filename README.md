@@ -91,6 +91,8 @@ Add validation on player1 variable.  Blank input not allowed
 
 Add validation on row and column input.  Blank input not allowed.
 
+Validate code against PEP6 Online Validator.
+
 
 
 ## Test Plan
@@ -102,6 +104,8 @@ Test valid row.  Row number must be between 1 & 8
 Test valid column.
 
 Test row/column already guessed.
+
+Test code against PEP8 online validator
 
 
 
@@ -141,6 +145,22 @@ Please select a valid column A to H repeats until valid input is received.
 Test Row/column already guessed.
 
 ![AlreadyGuessed.png](AlreadyGuessed.png)
+
+Player is prompted to guess again
+
+
+Do not accept blank Name
+
+![BlankName.png](BlankName.png)
+
+Enter Your Name text repeats until valid input is received.
+
+
+Test code against PEP8 online validator.
+
+![PEP8AllRight.png](PEP8AllRight.png)
+
+PEP8 online validator returns All right.
 
 
 
