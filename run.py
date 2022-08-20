@@ -66,9 +66,10 @@ def count_hit_ships(board):
 # Main Game
 if __name__ == "__main__":
     player1 = input("Enter Your Name : ").upper()
+    while len(player1) == 0:
+        player1 = input("Enter Your Name : ").upper()
     print ("Hello " + player1 + " !")
     print ("Lets Play Battleships, you have 10 missiles.")
-#    missiles = input("How many missiles in this game ? ")
     create_ships(HIDDEN_BOARD)
     turns = 10
     while turns > 0:
