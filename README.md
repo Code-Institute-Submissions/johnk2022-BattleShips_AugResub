@@ -75,10 +75,40 @@ Deployed to Heroku
 
 Add Player1 name
 
+20/08/22
+
+Add validation on player1 variable.  Blank input not allowed
+
+## Test Plan
+
+Test do not accept blank Name
+
+Test valid row.  Row number must be between 1 & 8
+
+Test valid column.
+
+Test row/column already guessed.
+
+Do not accept blank Name
+![BlankName.png](BlankName.png)
+Enter Your Name text repeats until valid input is received.
+
+Row number must be between 1 & 8
+![ValidateRow.png](ValidateRow.png)
+Please select a valid row 1 to 8 repeats until valid input is received.
+
+Column number must be between A & H
+![ValidateColumn.png](ValidateColumn.png)
+Please select a valid column A to H repeats until valid input is received.
+
+Row/column already guessed.
+![AlreadyGuessed.png](AlreadyGuessed.png)
+
+
 
 ## Bugs
 
-No validation on player1 variable
+
 
 
 ## Future Development
