@@ -54,9 +54,18 @@ Code can be found [here](https://github.com/johnk2022/battleships)
 
 ## Game
 
+Legend:
+
+"X" shows a hit.
+
+"-" shows a miss.
+
+" " (space) not guessed yet.
+
 ![GameBoard.png](GameBoard.png)
 
-Enter
+
+
 
 ## Project Wireframe
 ![BSWireframe.png](BSWireframe.png)
