@@ -9,6 +9,7 @@ It's taken a lot of experimentation, trial, and at times, mostly error.
 You can check it out on Heroku [here](https://battleshipsjk2.herokuapp.com/)
 
 
+
 ## Project Description
 
 This project was created in order to get familiar with common development tools like Git & GitHub, and how to use them to write and manage python code. 
@@ -32,9 +33,11 @@ You have 10 missiles / tries to win.
 Good luck !!!
 
 
+
 ### Subject
 
 The classic Battle Ships game.
+
 
 
 ### Audience
@@ -42,11 +45,13 @@ The classic Battle Ships game.
 Anyone who likes simple games with a nostalgic retro touch
 
 
+
 ## Technology
 
 This project was written on github using Python.
 
 Code can be found [here](https://github.com/johnk2022/battleships)
+
 
 
 ## Project Wireframe
@@ -61,6 +66,7 @@ GitHub for the development tools and website hosting.
 Python code taken from taken from YouTuber Knowledge Mavens - excellent tutorials.
 
 CodeInstitute and my fellow students for the assistance, encouragement and general moral boosters.
+
 
 
 ## Version History
@@ -79,6 +85,8 @@ Add Player1 name
 
 Add validation on player1 variable.  Blank input not allowed
 
+
+
 ## Test Plan
 
 Test do not accept blank Name
@@ -89,19 +97,40 @@ Test valid column.
 
 Test row/column already guessed.
 
+
+
+## Test Results
+
+
 Do not accept blank Name
+
 ![BlankName.png](BlankName.png)
+
 Enter Your Name text repeats until valid input is received.
 
+
+
+
 Row number must be between 1 & 8
+
 ![ValidateRow.png](ValidateRow.png)
+
 Please select a valid row 1 to 8 repeats until valid input is received.
 
+
+
+
 Column number must be between A & H
+
 ![ValidateColumn.png](ValidateColumn.png)
+
 Please select a valid column A to H repeats until valid input is received.
 
+
+
+
 Row/column already guessed.
+
 ![AlreadyGuessed.png](AlreadyGuessed.png)
 
 
