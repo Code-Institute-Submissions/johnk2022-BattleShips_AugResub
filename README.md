@@ -52,7 +52,11 @@ This project was written on github using Python.
 
 Code can be found [here](https://github.com/johnk2022/battleships)
 
+## Game
 
+![GameBoard.png](GameBoard.png)
+
+Enter
 
 ## Project Wireframe
 ![BSWireframe.png](BSWireframe.png)
@@ -85,6 +89,8 @@ Add Player1 name
 
 Add validation on player1 variable.  Blank input not allowed
 
+Add validation on row and column input.  Blank input not allowed.
+
 
 
 ## Test Plan
@@ -111,25 +117,28 @@ Enter Your Name text repeats until valid input is received.
 
 
 
-Row number must be between 1 & 8
 
-![ValidateRow.png](ValidateRow.png)
+Test valid row.  No blanks and Row number must be between 1 & 8
+
+![VaildateRow.png](VaildateRow.png)
 
 Please select a valid row 1 to 8 repeats until valid input is received.
 
 
 
 
-Column number must be between A & H
 
-![ValidateColumn.png](ValidateColumn.png)
+Test valid column.  No blanks and Column letter must be between A & H
+
+![VaildateColumn.png](VaildateColumn.png)
 
 Please select a valid column A to H repeats until valid input is received.
 
 
 
 
-Row/column already guessed.
+
+Test Row/column already guessed.
 
 ![AlreadyGuessed.png](AlreadyGuessed.png)
 
