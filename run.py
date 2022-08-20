@@ -45,10 +45,15 @@ letters_to_numbers = {
 # Player Guess 
 def get_ship_location():
     row = input("Ship Row: ").upper()
+    while len(row) == 0:
+        row = input("Ship Row: ").upper()
     while row not in "12345678":
         print('Please select a valid row 1 to 8')
         row = input("Ship Row: ").upper()
+    
     column = input("Ship column: ").upper()
+    while len(column) == 0:
+        column = input("Ship column: ").upper()
     while column not in "ABCDEFGH":
         print('Please select a valid column A to H')
         column = input("Ship column: ").upper()
@@ -71,24 +76,31 @@ if __name__ == "__main__":
     print ("Hello " + player1 + " !")
     print ("Lets Play Battleships, you have 10 missiles.")
     create_ships(HIDDEN_BOARD)
+    
     turns = 10
     while turns > 0:
         print('Guess a row and column to fire your missile.')
         print_board(GUESS_BOARD)
         row, column = get_ship_location()
+        
         if GUESS_BOARD[row][column] == "-":
             print("You guessed that one already.")
+
         elif HIDDEN_BOARD[row][column] == "X":
             print(player1 + " HITS!!!")
             GUESS_BOARD[row][column] = "X" 
             turns -= 1  
+       
         else:
             print(player1 + " MISSES!")
             GUESS_BOARD[row][column] = "-"   
             turns -= 1     
+        
         if count_hit_ships(GUESS_BOARD) == 5:
             print("Congratulations " + player1 + ", You Win!!!")
             break
+        
         print(player1 + ", you have " + str(turns) + " missiles left")
+       
         if turns == 0:
             print("Sorry " + player1 + ", you ran out of missiles.")
